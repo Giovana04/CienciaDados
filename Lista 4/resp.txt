@@ -1,0 +1,20 @@
+1 - A diferença é como acessar os dados, o csv.reader retorna cada linha como um a lista
+onde é acessada pelos indices. Enquanto o csv.dictReader retorna cada linha como um dicionário
+que é acessado pelas chaves.
+
+O csv.reader é melhor quando o importante é o desempenho, e o csv.DictReader é mais legivel.
+
+2 - 
+soup = BeautifulSoup(html_content, 'html.parser')
+titulos = [h2.get_text() for h2 in soup.find_all('h2')]
+
+3 - Vantagem API: Estrutura estável, oficial e eficiente.
+Desvantagem: limites de requisição e custos.
+
+Vantagem Web Scraping: Acesso a qualquer dado público, mesmo sem API.
+Desvantagem web Scraping: Frágil (quebra se o site mudar o layout) e legalmente cinzento.
+
+4 - Pois se vazer a chave, alguem vai usar. Nunca deixar a chave no código, usar um arquivo .env.
+Usar servidores protegidos para ambientes de produção, onde as chaves são colocadas com criptografias.
+
+5 - O melhor será a Streaming API.  Seart API é paa buscas histórics, sendo limitada e necessário ficar requisitando novos conteúdos.
