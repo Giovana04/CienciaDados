@@ -1,0 +1,15 @@
+1. A visualização evita que você treine um modelo com dados inuteis. Histogramas denunciam segmentações no público (múltiplos picos), 
+enquanto matrizes de dispersão entregam de bandeja correlações e agrupamentos entre várias variáveis de uma só vez.
+
+2. A normal tem formato de sino, dados amontoados na média, a uniforme é um bloco plano, tudo com a mesma probabilidade. 
+O histograma é justamente quando está confuso sobre o formato dos dados e precisa que o gráfico mostre para para melhorar o entendimento.
+
+3. Remover linhas (dropna) mantém a honestidade dos dados, mas corre o risco de dizimar o tamanho do seu dataset. 
+Preencher com a média salva o volume de informações, mas insere dados inventados que reduzem a variância e podem destruir a análise 
+se houver outliers.
+
+5. Algoritmos como k-NN são calculadoras de distância e só entendem magnitude. Se não usar o scaling, uma variável com números 
+inflados vai esmagar matematicamente a importância de variáveis menores.
+
+9. O argumento leave=False serve para apagar a barra de progresso da tela assim que ela chega a 100%. Em loops aninhados, 
+isso impede que o seu terminal vire um lixão de barras de progresso concluídas a cada iteração do loop externo.
